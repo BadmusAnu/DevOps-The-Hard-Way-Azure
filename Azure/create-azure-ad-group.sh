@@ -1,7 +1,7 @@
 #!/bin/sh
 
 AZURE_AD_GROUP_NAME="devopsthehardway-aks-group"
-CURRENT_USER_OBJECTID=$(az ad signed-in-user show --query objectId -o tsv)
+CURRENT_USER_OBJECTID=$(az ad signed-in-user show --query id -o tsv)
 
 # Create Azure AD Group
 az ad group create --display-name $AZURE_AD_GROUP_NAME --mail-nickname $AZURE_AD_GROUP_NAME
