@@ -6,6 +6,6 @@ variable "name" {
 
 variable "location" {
   type        = string
-  default     = "uksouth"
+  default     = "eastus"
   description = "Azure Location of resources"
 }
